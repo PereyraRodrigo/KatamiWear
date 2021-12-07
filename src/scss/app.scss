@@ -1,3 +1,6 @@
 @import 'reset';
 @import 'reactStuff';
-@import 'navbar';
+@import 'utilities';
+@import '../components/navbar/navbar';
+@import '../components/itemlistcontainer/itemlistcontainer';
+@import '../components/newcollection/newcollection';

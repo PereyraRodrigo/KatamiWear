@@ -1,0 +1,20 @@
+.newcoll{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    &__title{
+        padding:50px 0 25px 0;
+        grid-column: span 12;
+    }
+    &__block1{
+        grid-column: span 4;
+    }
+    &__pic1{
+        width: 240px;
+    }
+    &__text{
+        font-size: 17px;
+    }
+    &__block2{
+        grid-column: span 6;
+    }
+}

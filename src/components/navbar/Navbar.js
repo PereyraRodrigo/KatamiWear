@@ -1,9 +1,11 @@
-import logoUnf from './../../media/logounf.svg'
+import { CartWidget } from './cartwidget/CartWidget'
+import logo from './../../media/logo.png'
 
 export const Navbar = () => {
     return (
         <nav className="navbar">
-            <img className="navbar__logo" src={logoUnf} alt="Company Logo" />            
+            <img className="navbar__logo" src={logo} alt="Company Logo" />            
+            <CartWidget />
             <ul className="navbar__list">
                 <li><a href="index.html">Women</a></li>
                 <li><a href="index.html">Men</a></li>
