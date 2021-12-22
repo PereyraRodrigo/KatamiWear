@@ -15,14 +15,13 @@ export const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     return (
-        <div>
-            <p className="itemCounter__title">Producto</p>
+        <>
             <div className="itemCounter__container">
-                <button className="itemCounter__button" onClick={decreace}>-</button>
-                <p className="itemCounter__number">{counter}</p>
-                <button className="itemCounter__button" onClick={add}>+</button>
-            </div>
+            <button className="itemCounter__button" onClick={decreace}>-</button>
+            <p className="itemCounter__number">{counter}</p>
+            <button className="itemCounter__button" onClick={add}>+</button>
             <button onClick={onAdd} className="itemCounter__buyButton">Agregar al carrito</button>
-        </div>
+            </div>
+        </>
     )
 }
