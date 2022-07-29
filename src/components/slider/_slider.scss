@@ -14,7 +14,7 @@
 	width: 100%;
 	height: 50rem;
 	overflow: hidden;
-	margin: 8rem 0;
+	margin: 3rem 0;
 }
 .cd-slider li {
 	position: absolute;
@@ -44,23 +44,24 @@
 	right: 0;
 	width: 100%;
 	height: 100%;
-	padding: 2rem 0 0 2rem;
-	font-size: 4rem;
+	padding-top: 1rem;
 	text-align: right;
 }
-.content h2 {
+.content p {
+	font-size: 5.1em;
+	font-weight: 600;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	transform: translateY(-30%);
 	opacity: 0;
 	transition: transform .5s, opacity .5s;
-  will-change: transform, opacity;
+  	will-change: transform, opacity;
+	margin-bottom: 17px;
 }
 .content a {
 	display: inline-block;
 	font-size: 2rem;
 	text-transform: lowercase;
-	padding: 1.5rem;
 	opacity: 0;
 	transform: translateY(-100%);
 	transition: transform .5s .1s, opacity .5s .1s;
@@ -77,7 +78,7 @@ li.current {
 li.current .image {
 	clip: rect(0, 80rem, 50rem, 0);
 }
-li.current .content h2 {
+li.current .content p {
 	transform: translateY(0);
 	opacity: 1;
 	transition-delay: 1s;

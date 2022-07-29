@@ -2,6 +2,10 @@
     background-color: #f3f0f3;
     min-height: 500px;
     display: flex;
+    &__container{
+        display: flex;
+        align-items: center;
+    }
     &__block{
         display: flex;
         justify-content: space-around;

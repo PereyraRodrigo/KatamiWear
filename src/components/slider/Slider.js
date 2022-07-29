@@ -6,21 +6,21 @@ export const Slider = () => {
                     <li>
                         <div className="image foto1"></div>
                         <div className="content">
-                            <h2>New collection <br/> Vostok</h2>
+                            <p>New collection <br/> Vostok</p>
                             <a href="index.html">View Gallery</a>
                         </div>
                     </li>
                     <li>
                     <div className="image foto2"></div>
                         <div className="content">
-                            <h2>Collection <br />SS22</h2>
+                            <p>Collection <br />SS22</p>
                             <a href="index.html">View Gallery</a>
                         </div>
                     </li>
                     <li>
                     <div className="image foto3"></div>
                         <div className="content">
-                            <h2>Katami <br /> Wear</h2>
+                            <p>Katami <br /> Wear</p>
                             <a href="index.html">View Gallery</a>
                         </div>
                     </li>

@@ -10,7 +10,6 @@ const data = [
     { id: 2, name: "Shirt 2", description: "Size S", image: pic4 ,stock: 3 },
     { id: 3, name: "Shirt 3", description: "Size L", image: pic3 ,stock: 8 }
 ];
-//no supe como importar una imagen propia asi que las traje de internet(traté de la manera que dejé la pic3 pero no funcionó)
 
 export const ItemListContainer = ({greeting}) => {
     const [productos, setProductos] = useState(null);

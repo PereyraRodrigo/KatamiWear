@@ -1,6 +1,23 @@
 .newcoll{
+    &__marqueeContainer{
+        height: 75px;
+        margin-top: 200px;
+    }
+    &__marquee{
+        font-size: 44px;
+        -webkit-text-fill-color: #ff0c0c00;
+        -webkit-text-stroke: 0.5px #f00;
+        border-top: 0.5px solid #f00;
+        border-bottom: 0.5px solid #f00;
+        padding: 6px 0px;
+        font-family: 'Archivo Black', sans-serif;
+        font-weight: 500;
+    }    
     &__title{
-        padding: 80px 0;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        font-size: $fsTitle;
+        font-weight: $fwTitle;
     }
     &__blockHolder{
         display: flex;
@@ -32,7 +49,7 @@
         width: 240px;
         font-size: 12px;
         margin-top: 12px;
-        margin-bottom: 199px;
+        margin-bottom: 119px;
     }
     &__pic2b{
         align-self: flex-end;
@@ -66,11 +83,13 @@
                 background-color: #ffffffb3;
                 border-radius: 50%;
                 outline: 1px red solid;
-                padding: 30px;
                 color: red;
-                height: 30px;
-                line-height: 30px;
                 writing-mode: sideways-lr;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90px;
+                height: 90px;
             }
         }
     }
