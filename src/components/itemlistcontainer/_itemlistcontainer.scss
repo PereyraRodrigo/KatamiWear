@@ -17,6 +17,16 @@
     }
 }
 .itemCounter{
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__temp{
+        background-color: crimson;
+        width: 159px;
+        height: 194px;
+    }
     &__title{
         display: flex;
         justify-content: center;
@@ -29,7 +39,7 @@
     &__button{
         padding: 7px;
         color: aqua;
-        background-color: white;
+        background-color: transparent;
         border: 0;
         font-size: 26px;
         font-weight: bold;
