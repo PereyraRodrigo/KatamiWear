@@ -1,0 +1,44 @@
+$fsTitle: 35px;
+$border: 1.9px solid black;
+.prodPage{
+    &__blockImg{
+        padding: 1rem;
+    }
+    &__blockInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &__name{
+        font-size: 2.6rem;
+        margin-bottom: 1rem;
+    }
+    &__price{
+        font-size: 21px;
+    }
+    //Add to bag block ->
+    &__container{
+        margin: 45px 0;
+    }
+    &__block{
+        padding: 15px 29px;
+        border-top: $border;
+        border-left: $border;
+        border-right: $border;
+        color: gray;
+        &:nth-last-child(1){
+            border-bottom: $border;
+            display: flex;
+            padding: 0;
+        }
+    }
+    &__counter{
+        padding: 15px 29px;
+    }
+    &__addToBag{
+        background-color: black;
+        color: white;
+        padding: 15px 29px;
+        text-align: center;
+    }
+}

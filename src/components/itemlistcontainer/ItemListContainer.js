@@ -1,11 +1,13 @@
 /* import { useEffect, useState } from "react" */
+import { useEffect, useState } from "react"
 import { ItemCount } from "../itemcount/ItemCount"
+import allProducts from "../../data/data"
 
 let temp = {
     div: {
         display: "flex",
         justifyContent: "center",
-        gap: "100px"
+        margin: "auto"
     }
 }
 /* import pic3 from "../../media/pic3.jpg"
@@ -18,9 +20,15 @@ const data = [
     { id: 3, name: "Shirt 3", description: "Size L", image: pic3 ,stock: 8 }
 ]; */
 
-export const ItemListContainer = ({greeting}) => {
-    /* const [productos, setProductos] = useState(null);
+function getProducts() {
+    return new Promise((resolve, reject) => {
+        setTimeout(()=> resolve(allProducts), 2000) 
+    })
+}
+export const ItemListContainer = () => {
 
+    /* const [productos, setProductos] = useState(null);
+    
     useEffect(() => {
 
         const promiseTryOut = new Promise((resolve, reject) => {
@@ -42,15 +50,32 @@ export const ItemListContainer = ({greeting}) => {
         .catch((err) => {
             console.log(err + "RE MAL");
         });
-    }, []); */        
+    }, []); */
     
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        getProducts().then((respuesta) => {
+            setData(respuesta);
+        })
+    }, []
+    )
     return (
         <>
-            <p className="greetingTemp">{greeting}</p>
-            <div style={temp.div}>
-                <ItemCount stock="5" initial={1} />
-                <ItemCount stock="3" initial={1} />
-                <ItemCount stock="1" initial={1} />
+            <div style={temp.div} className="container">
+                <div className="row">
+                    {
+                        data.map((productDisplay) =>
+                            <ItemCount
+                                key={productDisplay.id}
+                                name={productDisplay.name}
+                                price={productDisplay.price}
+                                img={productDisplay.img}
+                                stock={productDisplay.stock}
+                                initial={productDisplay.initial}
+                            />)
+                    }
+                </div>
             </div>
         </>
     )

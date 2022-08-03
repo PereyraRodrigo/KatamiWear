@@ -21,11 +21,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 50px !important;
     }
     &__temp{
-        background-color: crimson;
-        width: 159px;
-        height: 194px;
+        max-height: 250px;
     }
     &__title{
         display: flex;
@@ -38,7 +37,7 @@
     }
     &__button{
         padding: 7px;
-        color: aqua;
+        color: black;
         background-color: transparent;
         border: 0;
         font-size: 26px;
@@ -52,11 +51,16 @@
         display: flex;
         margin: auto;
         padding: 4px 17px;
-        color: aqua;
+        color: black;
         background-color: white;
-        outline: 1px solid aqua;
+        outline: 1px solid black;
         border: 0;
         font-size: 14px;
         cursor: pointer;
+        transition: all .2s linear;
+        &:hover{
+            color: white;
+            background-color: black;
+        }
     }
 }
