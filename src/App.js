@@ -1,6 +1,7 @@
 import './scss/app.scss';
 import './grid-system/bootstrap-grid.min.css'
 import {Navbar} from './components/navbar/Navbar'
+import { Footer } from './components/footer/Footer';
 import { Newcollection } from './components/newcollection/Newcollection';
 import { HomeText } from './components/hometext/HomeText';
 import { Slider } from './components/slider/Slider';
@@ -16,9 +17,10 @@ function App() {
       {/* <AboutUs/> */}
       <Slider />
       <ItemListContainer />
-      {/* <ProductPage /> */}
       <Newcollection />
       <HomeText/>
+      {/* <ProductPage /> */}
+      <Footer />
     </div>
   );
 }

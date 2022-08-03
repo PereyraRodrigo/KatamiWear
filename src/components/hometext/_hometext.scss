@@ -1,6 +1,6 @@
-.aboutUs{
+.homeText{
     background-color: #f3f0f3;
-    min-height: 500px;
+    min-height: 380px;
     display: flex;
     &__container{
         display: flex;
@@ -31,7 +31,7 @@
     }
 }
 @media (max-width: 992px){
-    .aboutUs{
+    .homeText{
         font-size: 14px;
         &__text{
             max-width: 80%;
@@ -39,7 +39,7 @@
     }
 }
 @media (max-width: 768px) {
-    .aboutUs{
+    .homeText{
         font-size: 12px;
         &__block{
             flex-direction: column;

@@ -1,0 +1,103 @@
+$hoverColor: #d7d7d7;
+.footer{
+    &__bg{
+        background-color: $bgBlack;
+    }
+    &__container{
+        color: white;
+        font-size: 14px;
+        padding: 30px 0;
+    }
+    &__topBlocks{
+        display: flex;
+        text-decoration: none;
+        color: white;        
+    }
+    &__leftBlock{
+        border: $border-white;
+        border-bottom: 0;
+        border-right: 0;       
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 0;
+        font-size: 13px;  
+        line-height: 1.3rem;
+        flex-wrap: wrap;
+        div{
+            padding: 15px 20px;
+        }
+    }
+    &__socialMedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(102%) contrast(102%); //to white  
+            margin: 0px 3px;
+            width: 24px;
+            transition: $transition;
+            &:hover{
+                filter: invert(94%) sepia(4%) saturate(68%) hue-rotate(172deg) brightness(114%) contrast(69%);
+                //to gray
+            }
+        }
+        a:nth-child(2){
+            img{
+                width: 20px;
+            }
+        }
+    }
+    &__rightBlock{
+        border: $border-white;
+        border-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        line-height: 1.1rem;
+        font-size: 13px;
+        a{
+            text-decoration: none;
+            color: white;
+            transition: $transition;
+            &:hover{
+                color: $hoverColor;
+            }
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 15px 20px;
+        }
+    }
+    &__bottomBlock{
+        border: $border-white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-size: 12px;
+        color: $hoverColor;        
+        a{
+            text-decoration: none;
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .footer{
+        &__topBlocks{
+            flex-direction: column;            
+        }
+        &__leftBlock{
+            border-right: $border-white;
+            flex-direction: column;
+            align-content: flex-start;
+        }
+        &__socialMedia{
+            justify-content: flex-start;
+        }
+        &__rightBlock{
+            flex-direction: column;
+            align-content: flex-start;
+        }
+    }
+}

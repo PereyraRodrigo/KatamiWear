@@ -4,7 +4,7 @@
     &__top{
         display: flex;
         justify-content: space-between;
-        border-top: 1px solid black;        
+        border-top: $border;        
     }
     &__logo{
         width: 250px;
@@ -13,8 +13,8 @@
     }
     &__icon{
         padding: 0 15px;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
+        border-left: $border;
+        border-right: $border;
     }    
     &__list{
         display: flex;
@@ -24,12 +24,12 @@
             color: black;
             padding: 20px 0px;
             width: 20%;
-            border-right: 1px solid black;
+            border-right: $border;
             padding: 15px 0;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            border-top: $border;
+            border-bottom: $border;
             &:first-child{
-                border-left: 1px solid black;
+                border-left: $border;
             }
         }
     }
