@@ -8,6 +8,7 @@ const stockProducts = [
         size: "XS",
         material: "100% Cotton",
         stock: 7,
+        col: "col-6",
         initial: 1,
     },
     {
@@ -19,6 +20,7 @@ const stockProducts = [
         size: "XL",
         material: "100% Cotton",
         stock: 5,
+        col: "col-3",
         initial: 1,
     },
     {
@@ -30,6 +32,7 @@ const stockProducts = [
         size: "XS",
         material: "100% Cotton",
         stock: 5,
+        col: "col-3",
         initial: 1,
     },
     {
@@ -41,6 +44,7 @@ const stockProducts = [
         size: "XXL",
         material: "100% Cotton",
         stock: 2,
+        col: "col-3",
         initial: 1,
     },
     {
@@ -52,6 +56,7 @@ const stockProducts = [
         size: "XL",
         material: "100% Cotton",
         stock: 3,
+        col: "col-3",
         initial: 1,
     },
     {
@@ -63,6 +68,7 @@ const stockProducts = [
         size: "L",
         material: "100% Cotton",
         stock: 8,
+        col: "col-3",
         initial: 1,
     },
     {
@@ -74,6 +80,7 @@ const stockProducts = [
         size: "XXL",
         material: "100% Cotton",
         stock: 4,
+        col: "col-3",
         initial: 1,
     },
     {
@@ -85,6 +92,7 @@ const stockProducts = [
         size: "XXL",
         material: "100% Cotton",
         stock: 4,
+        col: "col-3",
         initial: 1,
     }
 ]

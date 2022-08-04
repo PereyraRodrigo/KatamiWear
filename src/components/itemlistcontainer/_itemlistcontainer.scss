@@ -1,18 +1,39 @@
-.greetingTemp{
-    text-align: center;
-    color: cadetblue;
-}
-.itemlist{
-    &__holder{
+.card{
+    &__container{
+        margin-top: 1.5rem !important;
+        max-width: 300px !important;
+        margin: auto;
+        &--superCard{
+            max-width: unset !important;
+            width: 640px;
+        }
+    }
+    &__img{
+        height: 500px;
+        object-fit: cover;
+        &--superCard{
+            width: 100%;
+        }
+    }
+    &__info{
         display: flex;
-        justify-content: center;
-        padding: 25px 0px;
-        &--cards{
-            padding: 45px;
-            text-align: center;
-            &Img{
-                width: 200px;
-            }
+        justify-content: space-between;
+        margin: 7px 0;
+        font-weight: 300;
+    }
+    &__name{
+        font-size: 13px;
+    }
+    &__price{
+        font-size: 13px;
+        color: #5b5b5b;
+        margin-top: 4px;
+    }
+    &__show{
+        font-size: 13px;
+        transition: .4s all ease-in-out;
+        &:hover{
+            color: #7b7b7b;
         }
     }
 }

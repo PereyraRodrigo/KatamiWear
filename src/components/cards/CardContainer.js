@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import { ItemCount } from "./ItemCount"
 import allProducts from "../../data/data"
+import { Card } from "./Card"
+import { SuperCard } from "./SuperCard"
 
 let temp = {
     div: {
@@ -12,11 +13,10 @@ let temp = {
 
 function getProducts() {
     return new Promise((resolve, reject) => {
-        setTimeout(()=> resolve(allProducts), 0) 
+        setTimeout(() => resolve(allProducts), 0)
     })
 }
-export const ItemListContainer = () => { 
-
+export const CardContainer = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
@@ -28,18 +28,19 @@ export const ItemListContainer = () => {
     return (
         <>
             <div style={temp.div} className="container">
-                <div className="row">
+                <div className="row d-flex justify-content-around">
+                    <SuperCard />
                     {
                         data.map((productDisplay) =>
-                            <ItemCount
+                            <Card
+                                /* col={productDisplay.col} */
                                 key={productDisplay.id}
                                 name={productDisplay.name}
                                 price={productDisplay.price}
                                 img={productDisplay.img}
-                                stock={productDisplay.stock}
-                                initial={productDisplay.initial}
                             />)
                     }
+
                 </div>
             </div>
         </>
