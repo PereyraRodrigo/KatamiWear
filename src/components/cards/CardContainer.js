@@ -40,7 +40,6 @@ export const CardContainer = () => {
                                 img={productDisplay.img}
                             />)
                     }
-
                 </div>
             </div>
         </>

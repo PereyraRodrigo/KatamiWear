@@ -3,7 +3,7 @@ const stockProducts = [
         id: 1,
         name: "Hakama 2.0",
         price: 820,
-        color: "black",
+        color: "Black",
         img: "https://katamiwear.com/upload/iblock/b95/b95abb568b8cc1a245fd330877538373.jpg",
         size: "XS",
         material: "100% Cotton",

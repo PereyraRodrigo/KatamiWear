@@ -3,11 +3,11 @@ import './grid-system/bootstrap-grid.min.css'
 import {Navbar} from './components/navbar/Navbar'
 import { Footer } from './components/footer/Footer';
 import { Newcollection } from './components/newcollection/Newcollection';
-import { HomeText } from './components/hometext/HomeText';
 import { Slider } from './components/slider/Slider';
+import { CardContainer } from './components/cards/CardContainer'; 
+import { HomeText } from './components/hometext/HomeText';
+import { ItemDetailContainer } from './components/itemdetail/itemDetailContainer';
 /* import { ItemListContainer } from './components/itemlistcontainer/ItemListContainer'; */
-import { CardContainer } from './components/cards/CardContainer';
-/* import { ProductPage } from './components/productpage/ProductPage'; */
 /* import { AboutUs } from './components/aboutus/AboutUs'; */
 
 function App() {  
@@ -15,14 +15,14 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <AboutUs/> */}
-      {/* <ItemListContainer /> */}
       <Slider />
       <CardContainer />      
-      <Newcollection />
+      <ItemDetailContainer />
       <HomeText/>
+      <Newcollection />
       <Footer />
-      {/* <ProductPage /> */}
+      {/* <AboutUs/> */}
+      {/* <ItemListContainer /> */}
     </div>
   );
 }

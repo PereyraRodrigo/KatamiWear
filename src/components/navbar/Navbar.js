@@ -13,7 +13,7 @@ export const Navbar = () => {
                 <a href="index.html">Women</a>
                 <a href="index.html">Men</a>
                 <a href="index.html">About</a>
-                <a href="index.html">Shipping</a>
+                <a href="index.html">Models</a>
                 <a href="index.html">Contact</a>
             </div>
         </nav>
