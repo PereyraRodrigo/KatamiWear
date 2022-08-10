@@ -3,10 +3,13 @@ $fsTitle: 35px;
     &__blockImg{
         padding: 1rem;
     }
+    &__img{
+        padding-top: 15px;
+    }
     &__blockInfo{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-evenly;        
     }
     &__name{
         font-size: 2.6rem;

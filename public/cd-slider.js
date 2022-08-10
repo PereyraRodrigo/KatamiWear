@@ -76,7 +76,7 @@
         });
 
         //keyboard navigation
-        document.addEventListener('keydown', function (ev) {
+        /* document.addEventListener('keydown', function (ev) {
             var keyCode = ev.keyCode || ev.which;
             switch (keyCode) {
                 case 37:
@@ -86,7 +86,7 @@
                     navigate('right');
                     break;
             }
-        });
+        }); */
 
         // swipe navigation
         // from http://stackoverflow.com/a/23230280

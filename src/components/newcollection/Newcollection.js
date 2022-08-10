@@ -5,7 +5,7 @@ import { Marrquee } from './Marrquee';
 
 export const Newcollection = () => {
     return (
-        <>            
+        <section>            
             <Marrquee/>
             <div className='container newcoll'>
                 <p className='titleOne newcoll__title'>New Collection Vostok</p>
@@ -31,6 +31,6 @@ export const Newcollection = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }

@@ -34,6 +34,7 @@ export const CardContainer = () => {
                         data.map((productDisplay) =>
                             <Card
                                 /* col={productDisplay.col} */
+                                id={productDisplay.id}
                                 key={productDisplay.id}
                                 name={productDisplay.name}
                                 price={productDisplay.price}

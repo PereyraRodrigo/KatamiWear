@@ -1,29 +1,31 @@
 import './scss/app.scss';
 import './grid-system/bootstrap-grid.min.css'
-import {Navbar} from './components/navbar/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/navbar/Navbar'
 import { Footer } from './components/footer/Footer';
-import { Newcollection } from './components/newcollection/Newcollection';
-import { Slider } from './components/slider/Slider';
-import { CardContainer } from './components/cards/CardContainer'; 
-import { HomeText } from './components/hometext/HomeText';
-import { ItemDetailContainer } from './components/itemdetail/itemDetailContainer';
-/* import { ItemListContainer } from './components/itemlistcontainer/ItemListContainer'; */
+import { CardContainer } from './components/cards/CardContainer';
+import { ItemDetail } from './components/itemdetail/ItemDetail';
+import { Home } from './pages/home/Home';
+import { ItemListContainer } from './components/itemlistcontainer/ItemListContainer';
 /* import { AboutUs } from './components/aboutus/AboutUs'; */
 
-function App() {  
+function App() {
 
   return (
-    <div className="App">
+    <BrowserRouter>
       <Navbar />
-      <Slider />
-      <CardContainer />      
-      <ItemDetailContainer />
-      <HomeText/>
-      <Newcollection />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/Women' element={<CardContainer />} />
+        <Route path='/Women/:productId' element={<ItemDetail />} />
+        <Route path='/Men' element={<ItemListContainer />} />
+        {/* <CardContainer />
+        <ItemDetailContainer /> */}
+        {/* <AboutUs/> */}
+        {/* <ItemListContainer /> */}
+      </Routes>
       <Footer />
-      {/* <AboutUs/> */}
-      {/* <ItemListContainer /> */}
-    </div>
+    </BrowserRouter>
   );
 }
 

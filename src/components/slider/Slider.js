@@ -1,6 +1,6 @@
 export const Slider = () => {
     return (
-        <div className="container">
+        <section className="container">
             <div className="cd-slider">
                 <ul>
                     <li>
@@ -26,6 +26,6 @@ export const Slider = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
     )
 }

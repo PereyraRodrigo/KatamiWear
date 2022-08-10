@@ -4,7 +4,7 @@ import aboutUs from '../../media/aboutus.png'
 export const HomeText = () => {
 
     return (
-        <>
+        <section>
             <div className="homeText">
                 <div className="container homeText__container">
                     <div className="homeText__block">
@@ -14,6 +14,6 @@ export const HomeText = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }
