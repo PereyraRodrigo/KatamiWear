@@ -92,7 +92,7 @@
                 height: 90px;
             }
         }
-    }
+    }    
     &__button{
         cursor: pointer;
         margin-top: 19px;
@@ -100,6 +100,19 @@
         text-align: center;
         padding: 12px 0;
         font-size: 15px;
+    }
+}
+@supports(writing-mode: vertical-lr){
+    .newcoll{
+        &__pic1SidewaysText{
+            writing-mode: vertical-lr;
+        }
+        &__pic2SidewaysText{
+            writing-mode: vertical-lr;
+        }
+        &__block2B div{
+        writing-mode: vertical-lr;
+        }
     }
 }
 

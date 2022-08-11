@@ -18,16 +18,14 @@
     align-items: center;
     }
     &__button{
-        padding: 7px;
         color: black;
         background-color: transparent;
         border: 0;
         font-size: 26px;
-        font-weight: bold;
         cursor: pointer;
     }
     &__number{
-        padding: 0px 33px;
+        padding: 0px 9px;
     }
     &__buyButton{
         display: flex;

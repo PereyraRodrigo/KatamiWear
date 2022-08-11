@@ -7,7 +7,9 @@ import { CardContainer } from './components/cards/CardContainer';
 import { ItemDetail } from './components/itemdetail/ItemDetail';
 import { Home } from './pages/home/Home';
 import { ItemListContainer } from './components/itemlistcontainer/ItemListContainer';
-/* import { AboutUs } from './components/aboutus/AboutUs'; */
+import { YourBag } from './pages/yourbag/YourBag';
+import { Checkout } from './pages/checkout/Checkout';
+import { AboutUs } from './components/aboutus/AboutUs';
 
 function App() {
 
@@ -19,9 +21,11 @@ function App() {
         <Route path='/Women' element={<CardContainer />} />
         <Route path='/Women/:productId' element={<ItemDetail />} />
         <Route path='/Men' element={<ItemListContainer />} />
+        <Route path='/About' element={<AboutUs/>} />
+        <Route path='/Bag' element={<YourBag/>} />
+        <Route path='/Checkout' element={<Checkout />} />
         {/* <CardContainer />
-        <ItemDetailContainer /> */}
-        {/* <AboutUs/> */}
+        <ItemDetailContainer /> */}        
         {/* <ItemListContainer /> */}
       </Routes>
       <Footer />

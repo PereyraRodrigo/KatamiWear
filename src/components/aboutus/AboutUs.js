@@ -1,6 +1,6 @@
-import Menu from '../../js/menu';
+/* import Menu from '../../js/menu';
 const menuEl = document.querySelector('.menu');
-new Menu(menuEl);
+new Menu(menuEl); */
 export const AboutUs = () => {
     return (
         <>
