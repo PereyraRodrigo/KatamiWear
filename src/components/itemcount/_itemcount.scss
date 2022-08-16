@@ -13,9 +13,9 @@
         justify-content: center;
     }
     &__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__button{
         color: black;
@@ -26,6 +26,8 @@
     }
     &__number{
         padding: 0px 9px;
+        width: 32px;
+        text-align: center;
     }
     &__buyButton{
         display: flex;

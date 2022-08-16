@@ -1,27 +1,27 @@
-import { useState } from "react/cjs/react.development"
+import { useState } from "react";
 
-export const ItemCount = () => {
-    const [counter, setCounter] = useState(1)
-
-    const add = () => {
+export const ItemCount = (props) => {
+    const [counter, setCounter] = useState(props.initial)
+    /* console.log(counter); */
+    /* const add = () => {
         setCounter(counter + 1)
     }
     const decreace = () => {
         if (counter > 1) {
             setCounter(counter - 1)
         }
-    }
-    /* const add = () => {
-        if (counter < stock) {
+    } */
+    const add = () => {
+        if (counter < props.stock) {
             setCounter(counter + 1);
         }
     }
     const decreace = () => {
-        if (counter > initial) {
+        if (counter > 1) {
             setCounter(counter - 1);
         }
     }
-    const onAdd = () => {
+    /* const onAdd = () => {
         if (stock > 0) {
             alert(`You've added ${counter} items`)
         }

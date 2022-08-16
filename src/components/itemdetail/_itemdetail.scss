@@ -28,7 +28,7 @@ $fsTitle: 35px;
         border-left: $border;
         border-right: $border;
         color: gray;
-        &:nth-last-child(1){
+        &--counterNaddToBag{
             border-bottom: $border;
             display: flex;
             padding: 0;
@@ -42,5 +42,13 @@ $fsTitle: 35px;
         color: white;
         padding: 15px 29px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__checkCart, &__keepShopping{
+        background-color: $bgBlack;
+        color: $bgBlackFont;
     }
 }

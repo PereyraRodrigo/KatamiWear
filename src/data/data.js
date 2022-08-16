@@ -73,7 +73,7 @@ const stockProducts = [
         img: "https://katamiwear.com/upload/iblock/5b2/5b2cfa079e8e3283f046af7558cc6342.jpeg",
         size: "XXL",
         material: "100% Cotton",
-        stock: 4,
+        stock: 12,
         initial: 1,
     },
     {

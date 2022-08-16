@@ -1,5 +1,5 @@
 import pic1 from '../../media/pic9.jpg'
-import { ItemCount } from '../itemlistcontainer/ItemCount'
+import { ItemCount } from '../itemcount/ItemCount'
 export const YourBagItemBlock = () => {
     return (
         <div className='yourBag__itemBlock'>
