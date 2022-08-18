@@ -33,7 +33,9 @@ export const ItemDetailContainer = () => {
                 stock={detail.stock}
                 size={detail.size}
                 color={detail.color}
-                material={detail.material} />
+                material={detail.material}
+                initial={1}
+            />
         </div>
     )
 }

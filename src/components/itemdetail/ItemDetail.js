@@ -1,7 +1,9 @@
 import { AddToBagBlock } from "./AddToBagBlock"
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
-export const ItemDetail = ({img,name,price,id,stock,initial,material,size,color}) => {
+export const ItemDetail = ({ img, name, price, id, stock, material, size, color, initial }) => {
+    const [counter, setCounter] = useState(initial)
     return (
         <>
             <div className="row">
@@ -21,6 +23,9 @@ export const ItemDetail = ({img,name,price,id,stock,initial,material,size,color}
                         size={size}
                         color={color}
                         stock={stock}
+                        initial={initial}
+                        counter={counter}
+                        setCounter={setCounter}
                     />
                 </div>
             </div>

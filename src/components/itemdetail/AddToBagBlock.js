@@ -1,13 +1,21 @@
 import { ItemCount } from "../itemcount/ItemCount"
 
-export const AddToBagBlock = ({ stock, material, size, color, counter }) => {
-
-    function handleAdd(counter) {
-        console.log(`You've added ${counter} items to your cart`);
-        console.log(typeof counter);
-        //aca no logro lo que quiero, sale undefined
+export const AddToBagBlock = ({ stock, material, size, color, counter, setCounter, initial }) => {
+    const handleSubmit = () => {
+        console.log(`You've added ${counter} items to your cart`)
     }
-    return (
+    const handleAdd = () => {
+        if (counter < stock) {
+            setCounter(counter + 1)
+        }
+    }
+    const handleSubstract = () => {
+        if (counter > 1) {
+            setCounter(counter - 1)
+        }
+    }
+    
+        return (
         <div className="itemDetail__container">
             <div className="itemDetail__block">
                 <p>Color</p>
@@ -24,18 +32,13 @@ export const AddToBagBlock = ({ stock, material, size, color, counter }) => {
             <div className="itemDetail__block itemDetail__block--counterNaddToBag">
                 <div className="col-3 itemDetail__counter">
                     <ItemCount
-                        stock={stock}
                         counter={counter}
-                        initial={1}
                         handleAdd={handleAdd}
+                        handleSubstract={handleSubstract}
                     />
                 </div>
-                <div onClick={() => handleAdd(counter)} className="col-9 itemDetail__addToBag">ADD TO BAG</div>
+                <div onClick={()=>handleSubmit()} className="col-9 itemDetail__addToBag">ADD TO BAG</div>
             </div>
-            {/* <div>
-                    <div className="col-6 itemDetail__checkCart">Check Your Cart</div>
-                    <div className="col-6 itemDetail__keepShopping">Keep Shopping</div>
-                </div> */}
         </div>
     )
 }
